@@ -176,6 +176,10 @@ export default function Hero() {
     }
   };
 
+  const handleGetKit = () => {
+    window.location.href = 'https://whop.com/sprout-ventures-academy/the-bounce-back-business-kit/';
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -222,9 +226,9 @@ export default function Hero() {
           {/* Headline */}
           <div ref={headlineRef} className="mb-7 preserve-3d">
             <h1 className="font-heading font-black text-4xl sm:text-5xl lg:text-[56px] text-text-primary leading-[1.02]">
-              <span className="headline-line block">Turn flops into</span>
+              <span className="headline-line block">Your child just failed.</span>
               <span className="headline-line block mt-1">
-                <span className="bg-gradient-to-r from-mint to-emerald-500 bg-clip-text text-transparent">fast learning.</span>
+                <span className="bg-gradient-to-r from-mint to-emerald-500 bg-clip-text text-transparent">Here's what to say.</span>
               </span>
             </h1>
           </div>
@@ -234,17 +238,17 @@ export default function Hero() {
             ref={subheadRef}
             className="text-base lg:text-lg text-text-secondary/90 leading-relaxed mb-9 max-w-md"
           >
-            A calm-first, facts-next toolkit that helps kids bounce back from
-            business setbacks—without lectures or rescue.
+            A practical framework used by 200+ families to help kids ages 7-13
+            calm down, capture facts, and bounce back stronger—in just 10 minutes.
           </p>
 
           {/* CTA Row */}
           <div ref={ctaRef} className="flex flex-wrap items-center gap-4 mb-9">
             <button
-              onClick={() => scrollToSection('pricing')}
+              onClick={handleGetKit}
               className="btn-primary flex items-center gap-2 group"
             >
-              Get the Kit
+              Get the Kit — $79
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button

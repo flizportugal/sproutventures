@@ -9,6 +9,7 @@ import WhatsInside from './sections/WhatsInside';
 import The5RFlow from './sections/The5RFlow';
 import SocialProof from './sections/SocialProof';
 import Testimonials from './sections/Testimonials';
+import ComparisonTable from './sections/ComparisonTable';
 import HowItWorks from './sections/HowItWorks';
 import Pricing from './sections/Pricing';
 import FAQ from './sections/FAQ';
@@ -96,6 +97,7 @@ function App() {
         <The5RFlow />
         <SocialProof />
         <Testimonials />
+        <ComparisonTable />
         <HowItWorks />
         <Pricing />
         <FAQ />

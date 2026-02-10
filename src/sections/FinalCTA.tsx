@@ -85,7 +85,7 @@ export default function FinalCTA() {
   }, []);
 
   const handleGetKit = () => {
-    setShowDialog(true);
+    window.location.href = 'https://whop.com/sprout-ventures-academy/the-bounce-back-business-kit/';
   };
 
   return (

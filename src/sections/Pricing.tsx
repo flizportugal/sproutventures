@@ -75,11 +75,7 @@ export default function Pricing() {
   }, []);
 
   const handleGetKit = () => {
-    setDialogContent({
-      title: 'Coming Soon!',
-      message: 'The Bounce-Back Business Kit will be available for purchase soon. Leave your email to be notified when it launches!',
-    });
-    setShowDialog(true);
+    window.location.href = 'https://whop.com/sprout-ventures-academy/the-bounce-back-business-kit/';
   };
 
   const handleCompleteKit = () => {
@@ -122,14 +118,20 @@ export default function Pricing() {
           {/* Eyebrow */}
           <div className="eyebrow mb-5 text-violet-500 mt-4">The Starter Kit</div>
 
-          {/* Price */}
+          {/* Price with Value Stack */}
           <div className="mb-3">
-            <span className="font-heading font-black text-6xl lg:text-7xl bg-gradient-to-r from-text-primary to-violet-600 bg-clip-text text-transparent">
-              $79
-            </span>
+            <div className="inline-block">
+              <div className="text-sm text-text-secondary/60 line-through mb-1">$187 value</div>
+              <span className="font-heading font-black text-6xl lg:text-7xl bg-gradient-to-r from-text-primary to-violet-600 bg-clip-text text-transparent">
+                $79
+              </span>
+            </div>
           </div>
-          <p className="text-sm text-text-secondary mb-10">
+          <p className="text-sm text-text-secondary mb-2">
             One-time purchase. Lifetime access.
+          </p>
+          <p className="text-xs text-mint font-semibold mb-10">
+            You save $108 (58% off)
           </p>
 
           {/* Features */}
