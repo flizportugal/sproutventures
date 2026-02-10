@@ -97,18 +97,18 @@ export default function Pricing() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-mint/10 to-transparent rounded-full" />
       </div>
 
-      <div className="w-full px-6 lg:px-12 max-w-3xl mx-auto relative">
+      <div className="w-full px-6 lg:px-12 max-w-3xl mx-auto relative pt-6">
         {/* Main Pricing Card */}
         <div
           ref={cardRef}
-          className="relative bg-gradient-to-br from-paper-lavender via-paper-lavender to-violet-50 rounded-[32px] p-8 lg:p-14 card-shadow text-center overflow-hidden perspective-1000"
+          className="relative bg-gradient-to-br from-paper-lavender via-paper-lavender to-violet-50 rounded-[32px] p-8 lg:p-14 card-shadow text-center perspective-1000"
         >
-          {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-mint/20 to-transparent rounded-full blur-2xl" />
-          <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-violet-200/30 to-transparent rounded-full blur-2xl" />
+          {/* Decorative elements - clipped to card */}
+          <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-bl from-mint/20 to-transparent rounded-full blur-2xl overflow-hidden rounded-[32px]" />
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-violet-200/30 to-transparent rounded-full blur-2xl overflow-hidden rounded-[32px]" />
 
           {/* Popular badge */}
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
             <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-mint to-emerald-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg shadow-mint/30">
               <Sparkles className="w-3.5 h-3.5" />
               MOST POPULAR
