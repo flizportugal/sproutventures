@@ -30,16 +30,19 @@ export default function SVAHero() {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-          Give Your Child the Skills<br />
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+          Your Child's First Business Just Failed.<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600">
-            Schools Don't Teach
+            Here's What Actually Works.
           </span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-          Sprout Ventures Academy gives kids ages 6-14 the creativity, confidence, and business skills
-          to turn their ideas into reality—through interactive games, real projects, and expert guidance.
+        <p className="text-xl md:text-2xl text-slate-600 mb-4 max-w-4xl mx-auto leading-relaxed">
+          The only program that teaches kids ages 6-14 what to do when things go wrong—not just how to start, but how to bounce back, learn from setbacks, and build real resilience.
+        </p>
+
+        <p className="text-lg text-slate-500 mb-8 max-w-3xl mx-auto">
+          Through interactive games, real projects, and proven frameworks, your child learns the one skill that matters most: <strong className="text-slate-700">How to handle failure like an entrepreneur.</strong>
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

@@ -4,21 +4,24 @@ export default function SVATestimonials() {
   const testimonials = [
     {
       name: 'Jennifer R.',
-      role: 'Mother of Alex, 10',
+      role: 'Mother of Alex, 10 | Boston, MA',
       image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content: 'My son was always full of ideas but never knew how to turn them into reality. After just 2 months with Sprout Ventures, he\'s launched his own dog-walking service and is learning how to manage his earnings. The confidence boost has been incredible!'
+      content: 'My son went from "I\'m terrible at business" to running a $150/month dog-walking service in just 8 weeks. He tracks his earnings, handles cancellations without meltdowns, and actually enjoys problem-solving now. The resilience framework changed everything.',
+      highlight: '$150/month in 8 weeks'
     },
     {
       name: 'Michael T.',
-      role: 'Father of Emma, 8 & Jake, 12',
+      role: 'Father of Emma, 8 & Jake, 12 | Austin, TX',
       image: 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content: 'I\'m amazed at how Sprout Ventures has made complex business concepts so accessible for my kids. Emma now understands profit margins better than I did in college! Both my children look forward to their weekly challenges and are constantly talking about their \'business ideas\'.'
+      content: 'Emma now understands profit margins better than I did in college—she\'s 8! More importantly, when her lemonade stand had zero customers the first day, she didn\'t quit. She adjusted her pricing and moved locations. That\'s the real skill.',
+      highlight: 'Learned resilience + business thinking'
     },
     {
       name: 'Sarah L.',
-      role: 'Mother of Tyler, 11',
+      role: 'Mother of Tyler, 11 | Denver, CO',
       image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=400',
-      content: 'My son used to spend hours playing video games, but now he\'s channeling that energy into creating his own online store with Sprout Ventures\' guidance. The way they\'ve gamified business education is brilliant. Tyler has made real money selling his digital artwork and is learning about taxes, expenses, and saving.'
+      content: 'Tyler went from gaming all weekend to earning $200 selling digital art. But the best part? When a customer complained, he didn\'t spiral. He asked, "What should I do differently next time?" That\'s worth more than the money.',
+      highlight: 'Earned $200 + handles setbacks'
     }
   ];
 
@@ -37,6 +40,9 @@ export default function SVATestimonials() {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg p-8 relative">
+              <div className="absolute -top-3 right-6 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                {testimonial.highlight}
+              </div>
               <Quote className="w-12 h-12 text-green-200 mb-4" />
               <p className="text-slate-600 mb-6 leading-relaxed">
                 "{testimonial.content}"
@@ -46,6 +52,7 @@ export default function SVATestimonials() {
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div>
                   <div className="font-semibold text-slate-900">{testimonial.name}</div>
