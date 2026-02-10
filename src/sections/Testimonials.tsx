@@ -13,7 +13,7 @@ const useCases = [
 
 const testimonials = [
   {
-    image: '/testimonial_parent_a.jpg',
+    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
     name: 'Mark T.',
     location: 'Portland, OR',
     quote:
@@ -23,7 +23,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    image: '/testimonial_parent_b.jpg',
+    image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
     name: 'Lisa R.',
     location: 'Phoenix, AZ',
     quote:
@@ -198,6 +198,18 @@ export default function Testimonials() {
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="testimonial-photo w-14 h-14 rounded-2xl object-cover shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                      target.style.display = 'flex';
+                      target.style.alignItems = 'center';
+                      target.style.justifyContent = 'center';
+                      target.style.color = 'white';
+                      target.style.fontSize = '24px';
+                      target.style.fontWeight = 'bold';
+                      target.alt = '';
+                      target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="56" height="56"%3E%3Crect fill="%2310b981" width="56" height="56"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" fill="white"%3E' + testimonial.name.charAt(0) + '%3C/text%3E%3C/svg%3E';
+                    }}
                   />
                   <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-mint rounded-full flex items-center justify-center">
                     <span className="text-[10px] text-white">✓</span>
