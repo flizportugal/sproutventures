@@ -12,7 +12,9 @@ export default function SVAHero() {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] bg-top" style={{ backgroundSize: '30px 30px' }}></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20 text-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
         <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 rounded-full mb-8">
           <div className="flex -space-x-2">
             <img src="https://i.pravatar.cc/40?img=1" alt="Parent" className="w-8 h-8 rounded-full border-2 border-white" />
@@ -64,7 +66,35 @@ export default function SVAHero() {
         </div>
 
         <div className="mt-4 animate-bounce cursor-pointer" onClick={() => scrollToSection('skills')}>
-          <ChevronDown className="w-8 h-8 mx-auto text-slate-400" />
+          <ChevronDown className="w-8 h-8 mx-auto lg:mx-0 text-slate-400" />
+        </div>
+          </div>
+
+          <div className="hidden lg:block">
+            <div className="relative">
+              <div className="absolute -top-4 -left-4 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div className="absolute -bottom-8 right-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+              <div className="relative">
+                <img
+                  src="https://images.pexels.com/photos/8612990/pexels-photo-8612990.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop"
+                  alt="Children collaborating on creative entrepreneurial project with colorful materials"
+                  className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                  loading="eager"
+                />
+                <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 max-w-xs">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <span className="text-2xl">🎯</span>
+                    </div>
+                    <div className="text-left">
+                      <div className="text-sm font-semibold text-slate-900">Real Results</div>
+                      <div className="text-xs text-slate-600">1,200+ Success Stories</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

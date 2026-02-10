@@ -1,6 +1,7 @@
 import SVAHero from './sections/SVAHero';
 import SVASkills from './sections/SVASkills';
 import SVAHowItWorks from './sections/SVAHowItWorks';
+import SVAPlatformPreview from './sections/SVAPlatformPreview';
 import SVATestimonials from './sections/SVATestimonials';
 import SVAPricing from './sections/SVAPricing';
 import SVAFAQ from './sections/SVAFAQ';
@@ -14,6 +15,7 @@ function App() {
         <SVAHero />
         <SVASkills />
         <SVAHowItWorks />
+        <SVAPlatformPreview />
         <SVATestimonials />
         <SVAPricing />
         <SVAFAQ />

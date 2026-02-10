@@ -5,19 +5,19 @@ export default function SVATestimonials() {
     {
       name: 'Jennifer R.',
       role: 'Mother of Alex, 10',
-      image: '/testimonial_parent_a.jpg',
+      image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400',
       content: 'My son was always full of ideas but never knew how to turn them into reality. After just 2 months with Sprout Ventures, he\'s launched his own dog-walking service and is learning how to manage his earnings. The confidence boost has been incredible!'
     },
     {
       name: 'Michael T.',
       role: 'Father of Emma, 8 & Jake, 12',
-      image: '/testimonial_parent_b.jpg',
+      image: 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=400',
       content: 'I\'m amazed at how Sprout Ventures has made complex business concepts so accessible for my kids. Emma now understands profit margins better than I did in college! Both my children look forward to their weekly challenges and are constantly talking about their \'business ideas\'.'
     },
     {
       name: 'Sarah L.',
       role: 'Mother of Tyler, 11',
-      image: '/testimonial_parent_a.jpg',
+      image: 'https://images.pexels.com/photos/1181519/pexels-photo-1181519.jpeg?auto=compress&cs=tinysrgb&w=400',
       content: 'My son used to spend hours playing video games, but now he\'s channeling that energy into creating his own online store with Sprout Ventures\' guidance. The way they\'ve gamified business education is brilliant. Tyler has made real money selling his digital artwork and is learning about taxes, expenses, and saving.'
     }
   ];
@@ -60,9 +60,10 @@ export default function SVATestimonials() {
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/3">
               <img
-                src="/testimonial_parent_b.jpg"
-                alt="The Johnson Family"
-                className="w-full rounded-xl shadow-lg"
+                src="https://images.pexels.com/photos/4259140/pexels-photo-4259140.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Happy Johnson family with children showing confidence and entrepreneurial spirit"
+                className="w-full rounded-xl shadow-lg object-cover"
+                loading="lazy"
               />
             </div>
             <div className="md:w-2/3">
