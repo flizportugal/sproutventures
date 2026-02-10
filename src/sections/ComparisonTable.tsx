@@ -154,17 +154,17 @@ export default function ComparisonTable() {
         </div>
 
         {/* Comparison Table - Desktop */}
-        <div ref={tableRef} className="hidden lg:block">
-          <div className="bg-white rounded-3xl card-shadow overflow-hidden border border-gray-100">
+        <div ref={tableRef} className="hidden lg:block pt-6">
+          <div className="bg-white rounded-3xl card-shadow overflow-hidden border border-gray-100 relative">
             {/* Header */}
             <div className="grid grid-cols-3 gap-0 border-b border-gray-100">
               <div className="p-6"></div>
 
               {/* Starter Kit Column Header */}
               <div className="bg-gradient-to-br from-paper-lavender to-violet-50 p-6 border-l border-r border-violet-100 relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-mint to-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg">
-                    <Sparkles className="w-3 h-3" />
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+                  <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-mint to-emerald-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
+                    <Sparkles className="w-3.5 h-3.5" />
                     RECOMMENDED
                   </div>
                 </div>
@@ -266,12 +266,12 @@ export default function ComparisonTable() {
         </div>
 
         {/* Comparison Cards - Mobile */}
-        <div className="lg:hidden space-y-6">
+        <div className="lg:hidden space-y-6 pt-6">
           {/* Starter Kit Card */}
-          <div className="bg-gradient-to-br from-paper-lavender to-violet-50 rounded-3xl card-shadow overflow-hidden border border-violet-200 relative">
-            <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-              <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-mint to-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg">
-                <Sparkles className="w-3 h-3" />
+          <div className="bg-gradient-to-br from-paper-lavender to-violet-50 rounded-3xl card-shadow border border-violet-200 relative">
+            <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-10">
+              <div className="inline-flex items-center gap-1.5 bg-gradient-to-r from-mint to-emerald-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">
+                <Sparkles className="w-3.5 h-3.5" />
                 RECOMMENDED
               </div>
             </div>
