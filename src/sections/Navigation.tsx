@@ -79,7 +79,7 @@ export default function Navigation() {
 
         {/* CTA Button */}
         <button
-          onClick={() => scrollToSection('pricing')}
+          onClick={() => window.location.href = 'https://whop.com/checkout/plan_4ZGoSmwZbFVmt'}
           className="nav-cta btn-primary text-sm py-2.5 px-6 rounded-xl"
         >
           Get the Kit

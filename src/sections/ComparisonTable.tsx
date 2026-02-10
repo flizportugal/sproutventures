@@ -104,7 +104,7 @@ export default function ComparisonTable() {
   }, []);
 
   const handleGetStarter = () => {
-    window.location.href = 'https://whop.com/sprout-ventures-academy/the-bounce-back-business-kit/';
+    window.location.href = 'https://whop.com/checkout/plan_4ZGoSmwZbFVmt';
   };
 
   const renderFeatureValue = (value: boolean | string) => {
