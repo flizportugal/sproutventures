@@ -248,7 +248,7 @@ export default function Hero() {
               onClick={handleGetKit}
               className="btn-primary flex items-center gap-2 group"
             >
-              Get the Kit — $79
+              Get the Kit — <span className="line-through opacity-60">$79</span> $37
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button

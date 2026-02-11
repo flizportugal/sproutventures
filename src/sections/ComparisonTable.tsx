@@ -172,7 +172,8 @@ export default function ComparisonTable() {
                   Starter Kit
                 </h3>
                 <div className="text-center mb-4">
-                  <span className="font-heading font-black text-4xl text-text-primary">$79</span>
+                  <div className="text-sm text-text-secondary/60 line-through">$79</div>
+                  <span className="font-heading font-black text-4xl text-text-primary">$37</span>
                   <p className="text-sm text-text-secondary mt-1">One-time purchase</p>
                 </div>
                 <div className="flex flex-col gap-2 text-xs text-text-secondary text-center">
@@ -281,7 +282,8 @@ export default function ComparisonTable() {
                 Starter Kit
               </h3>
               <div className="mb-4">
-                <span className="font-heading font-black text-5xl text-text-primary">$79</span>
+                <div className="text-base text-text-secondary/60 line-through mb-1">$79</div>
+                <span className="font-heading font-black text-5xl text-text-primary">$37</span>
                 <p className="text-sm text-text-secondary mt-1">One-time purchase</p>
               </div>
 
@@ -340,7 +342,7 @@ export default function ComparisonTable() {
                 onClick={handleGetStarter}
                 className="btn-primary w-full flex items-center justify-center gap-2 group"
               >
-                Get Starter Kit — $79
+                Get Starter Kit — <span className="line-through opacity-60">$79</span> $37
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
@@ -448,7 +450,7 @@ export default function ComparisonTable() {
                 💡 Recommended Path
               </h4>
               <p className="text-sm text-text-secondary leading-relaxed mb-4">
-                <strong className="text-text-primary">Start with the Starter Kit ($79)</strong> → Master Stages 1-2 over 2-4 weeks →
+                <strong className="text-text-primary">Start with the Starter Kit ($37)</strong> → Master Stages 1-2 over 2-4 weeks →
                 <strong className="text-text-primary"> Upgrade to Complete Kit ($47)</strong> when you're ready for Stages 3-4.
               </p>
               <p className="text-xs text-text-secondary/80 italic">
