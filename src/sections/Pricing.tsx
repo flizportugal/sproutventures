@@ -121,9 +121,9 @@ export default function Pricing() {
           {/* Price with Value Stack */}
           <div className="mb-3">
             <div className="inline-block">
-              <div className="text-sm text-text-secondary/60 line-through mb-1">$187 value</div>
+              <div className="text-base text-text-secondary/60 line-through mb-2">Was $79</div>
               <span className="font-heading font-black text-6xl lg:text-7xl bg-gradient-to-r from-text-primary to-violet-600 bg-clip-text text-transparent">
-                $79
+                $37
               </span>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Pricing() {
             One-time purchase. Lifetime access.
           </p>
           <p className="text-xs text-mint font-semibold mb-10">
-            You save $108 (58% off)
+            Save $42 (53% off)
           </p>
 
           {/* Features */}
