@@ -35,7 +35,7 @@ degrees or complicated systems.
 
 **CTA Changes:**
 - Current: "Get the Kit"
-- Optimized: "Get the Exact Words — $79"
+- Optimized: "Get the Exact Words"
 - Psychology: Specificity ("Exact Words") + transparency (price upfront)
 
 ---
