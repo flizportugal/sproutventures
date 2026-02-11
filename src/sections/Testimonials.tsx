@@ -13,7 +13,7 @@ const useCases = [
 
 const testimonials = [
   {
-    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
+    image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop',
     name: 'Mark T.',
     location: 'Portland, OR',
     quote:
